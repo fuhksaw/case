@@ -1,0 +1,89 @@
+/* src/pages/profile.css */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-field label {
+    background-color: #E6EADF; /* Светло-зеленый из дизайна */
+    color: #5B8064;
+    padding: 10px 25px;
+    border-radius: 15px 15px 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.profile-field input, 
+.profile-field textarea {
+    background-color: #E6EADF;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    margin-top: -1px; /* Склейка с лейблом */
+    opacity: 0.8;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background-color: #5B8064;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.change-pass-btn {
+    background: none;
+    border: 1px solid #5B8064;
+    color: #5B8064;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #4a6952;
+}
+
+.teams-section {
+    margin-top: 30px;
+    border-top: 1px solid #E6EADF;
+    padding-top: 20px;
+}
+
+.teams-section h3 {
+    color: #5B8064;
+    margin-bottom: 10px;
+}
+
+.empty-text {
+    color: #99A799;
+    font-style: italic;
+}
